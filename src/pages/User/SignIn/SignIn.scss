@@ -1,0 +1,85 @@
+@import "../../../scss/index.scss";
+
+.sign-in {
+  background-color: $azul-fuerte;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    &__logo {
+      padding: 60px 20px;
+    }
+
+    &__tab {
+      background-color: $blanco;
+
+      .ant-tabs {
+        width: 90vw;
+        @media (min-width: $media-breackpoint-up-sm) {
+          width: auto;
+        }
+      }
+
+      .ant-tabs-nav {
+        //height: 60px !important;
+        width: 100%;
+      }
+      .ant-tabs-nav-wrap {
+        display: inline !important;
+      }
+
+      .ant-tabs-tab {
+        width: 50%;
+        height: 60px !important;
+        text-align: center !important;
+        font-size: 0em + 19px / $defaultFontSize;
+        border-top: 4px solid $naranja-mango !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        display: inline;
+        color: $azul-fuerte;
+
+        @media (min-width: $media-breackpoint-up-sm) {
+          width: 220px;
+          font-size: 0em + 23px / $defaultFontSize;
+        }
+
+        &:hover {
+          color: $amarillo-maiz;
+        }
+        &:before {
+          content: none !important;
+        }
+
+        span {
+          height: 50%;
+          display: flex;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        //color: $naranja-mango !important;
+        border-top: 4px solid $naranja-mango !important;
+        border-radius: 0 !important;
+        border-right: 0 !important;
+        border-left: 0 !important;
+        .ant-tabs-tab-btn {
+          color: $naranja-mango;
+        }
+      }
+
+      .ant-tabs-content {
+        padding: 0 16px 16px 16px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,5 +1,4 @@
 //paleta de colores del proyecto
-
 $rojo-salsa: #f94144;
 $naranja-rojizo: #f3722c;
 $naranja-amarillento: #f8961e;
@@ -13,3 +12,18 @@ $azul-fuerte: #277da1;
 
 $negro: #000;
 $blanco: #fff;
+$defaultFontSize: 16px;
+
+//responsive down size
+$media-breackpoint-down-xs: 413.98px;
+$media-breackpoint-down-sm: 573.98px;
+$media-breackpoint-down-md: 767.98px;
+$media-breackpoint-down-lg: 991.98px;
+$media-breackpoint-down-xl: 1199.98px;
+
+//responsive up size
+$media-breackpoint-up-xs: 320px;
+$media-breackpoint-up-sm: 576px;
+$media-breackpoint-up-md: 768px;
+$media-breackpoint-up-lg: 992px;
+$media-breackpoint-up-xl: 1200px;

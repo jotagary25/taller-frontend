@@ -3,8 +3,8 @@ import LayoutUser from "../layouts/LayoutUser";
 import LayoutBasic from "../layouts/LayoutBasic";
 
 //importamos las paginas de User
-import PageUser from "../pages/user/index";
-import PageSignIn from "../pages/user/SignIn";
+import PageUser from "../pages/User/index";
+import PageSignIn from "../pages/User/SignIn";
 
 //importamos las páginas comunes
 import PageContact from "../pages/Contact";

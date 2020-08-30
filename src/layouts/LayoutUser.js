@@ -1,14 +1,25 @@
 import React from "react";
 import { Layout } from "antd";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import MenuSider from "../components/MenuSider";
 import MenuTop from "../components/MenuTop";
+import PageUser from "../pages/User/SignIn";
 
 import "./LayoutUser.scss";
 
 export default function LayoutUser(props) {
   const { routes } = props;
   const { Header, Content, Footer } = Layout;
+
+  const user = null;
+  if (!user) {
+    return (
+      <>
+        <Route path="/user/login" component={PageUser} />
+        <Redirect to="/user/login" />
+      </>
+    );
+  }
 
   return (
     <Layout>

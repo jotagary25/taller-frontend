@@ -1,0 +1,60 @@
+@import "../../scss/index.scss";
+
+.register-form {
+  text-align: left;
+
+  .ant-form-item {
+    &:nth-child(3),
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  .ant-input-affix-wrapper-focused {
+    border-color: $naranja-mango;
+    box-shadow: none;
+  }
+
+  &__input {
+    .anticon {
+      font-size: large;
+    }
+
+    &:hover {
+      border-color: $naranja-amarillento;
+      box-shadow: none;
+    }
+
+    input {
+      font-size: 0em + 20px / $defaultFontSize;
+      padding: 20px 20px 20px 40px;
+    }
+  }
+
+  &__checkbox {
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        border-color: $naranja-mango;
+        background-color: $naranja-mango;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: 0em + 22px / $defaultFontSize;
+    background-color: $naranja-mango;
+    color: $blanco;
+    height: 42px;
+
+    &:hover {
+      background-color: $rojo-salsa;
+      color: $blanco;
+    }
+    &:focus,
+    &:active {
+      background-color: $rojo-salsa;
+      color: $blanco;
+      border: 0;
+    }
+  }
+}

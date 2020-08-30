@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Button } from "antd";
 
 import "./MenuTop.scss";
@@ -15,7 +15,7 @@ export default function MenuTop() {
         </Button>
       </div>
       <div className="menu-top__right">
-        <Button>
+        <Button type="link">
           <PoweroffOutlined />
           <span> Salir </span>
         </Button>
