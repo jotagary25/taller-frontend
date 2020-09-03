@@ -1,14 +1,14 @@
 @import "../../scss/index.scss";
 
-.register-form {
+.login-form {
   text-align: left;
-
   .ant-form-item {
     &:nth-child(3),
     &:last-of-type {
       margin: 0;
     }
   }
+
   .ant-input-affix-wrapper-focused {
     border-color: $naranja-mango;
     box-shadow: none;
@@ -18,24 +18,12 @@
     .anticon {
       font-size: large;
     }
-
     &:hover {
       border-color: $naranja-amarillento;
-      box-shadow: none;
     }
-
     input {
       font-size: 0em + 20px / $defaultFontSize;
       padding: 20px 20px 20px 40px;
-    }
-  }
-
-  &__checkbox {
-    .ant-checkbox-checked {
-      .ant-checkbox-inner {
-        border-color: $naranja-mango;
-        background-color: $naranja-mango;
-      }
     }
   }
 

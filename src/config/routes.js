@@ -5,6 +5,9 @@ import LayoutBasic from "../layouts/LayoutBasic";
 //importamos las paginas de User
 import PageUser from "../pages/User/index";
 import PageSignIn from "../pages/User/SignIn";
+import GestionarUsuario from "../pages/User/GestionarUsuario";
+import GestionarPrivilegio from "../pages/User/GestionarPrivilegio";
+import GestionarCliente from "../pages/User/GestionarCliente";
 
 //importamos las páginas comunes
 import PageContact from "../pages/Contact";
@@ -26,6 +29,21 @@ const routes = [
         path: "/user/login",
         exact: true,
         component: PageSignIn,
+      },
+      {
+        path: "/user/gestionarusuario",
+        exact: true,
+        component: GestionarUsuario,
+      },
+      {
+        path: "/user/gestionarprivilegio",
+        exact: true,
+        component: GestionarPrivilegio,
+      },
+      {
+        path: "/user/gestionarcliente",
+        exact: true,
+        component: GestionarCliente,
       },
       {
         component: PageError404,

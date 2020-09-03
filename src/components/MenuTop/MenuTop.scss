@@ -2,6 +2,17 @@
 
 .menu-top {
   display: flex;
+
+  button {
+    color: $blanco;
+    &:hover {
+      color: $azul-fuerte;
+    }
+    &:focus,
+    &:active {
+      color: $blanco;
+    }
+  }
   &__right {
     position: absolute;
     right: 0;
